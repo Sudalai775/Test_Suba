@@ -1,0 +1,1054 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shree Shuba Associates - International Freight Forwarders & Logistics</title>
+    <meta name="description" content="Leading international freight forwarders providing ocean freight, air freight, customs clearance and logistics consultancy services since 2010. Expert logistics solutions across India." />
+    <meta name="author" content="Shree Shuba Associates" />
+    <meta name="keywords" content="freight forwarding, logistics, ocean freight, air freight, customs clearance, international shipping, export import, Chennai, India" />
+    
+    <meta property="og:title" content="Shree Shuba Associates - International Freight Forwarders & Logistics" />
+    <meta property="og:description" content="Leading international freight forwarders providing comprehensive logistics solutions. Ocean freight, air freight, customs clearance and trade consultancy services." />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="https://lovable.dev/opengraph-image-p98pqg.png" />
+    
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:site" content="@shreeshubassoc" />
+    <meta name="twitter:image" content="https://lovable.dev/opengraph-image-p98pqg.png" />
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Lora:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        background: 'hsl(210 40% 98%)',
+                        foreground: 'hsl(222.2 84% 4.9%)',
+                        card: 'hsl(0 0% 100%)',
+                        'card-foreground': 'hsl(222.2 84% 4.9%)',
+                        popover: 'hsl(0 0% 100%)',
+                        'popover-foreground': 'hsl(222.2 84% 4.9%)',
+                        primary: 'hsl(221.2 83.2% 53.3%)',
+                        'primary-foreground': 'hsl(210 40% 98%)',
+                        secondary: 'hsl(210 40% 96%)',
+                        'secondary-foreground': 'hsl(222.2 84% 4.9%)',
+                        muted: 'hsl(210 40% 96%)',
+                        'muted-foreground': 'hsl(215.4 16.3% 46.9%)',
+                        accent: 'hsl(210 40% 96%)',
+                        'accent-foreground': 'hsl(222.2 84% 4.9%)',
+                        destructive: 'hsl(0 84.2% 60.2%)',
+                        'destructive-foreground': 'hsl(210 40% 98%)',
+                        border: 'hsl(214.3 31.8% 91.4%)',
+                        input: 'hsl(214.3 31.8% 91.4%)',
+                        ring: 'hsl(221.2 83.2% 53.3%)'
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif']
+                    },
+                    screens: {
+                        'xs': '475px',
+                    }
+                }
+            }
+        }
+    </script>
+    
+    <style>
+        * {
+            scroll-behavior: smooth;
+            box-sizing: border-box;
+        }
+
+        /* PREVENT HORIZONTAL SCROLLING */
+        html, body {
+            max-width: 100%;
+            overflow-x: hidden;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Lora', serif;
+            width: 100%;
+            position: relative;
+        }
+        
+        /* Force all containers to stay within viewport */
+        .container-fix {
+            max-width: 100%;
+            overflow: hidden;
+        }
+        
+        /* Improved Video Responsiveness */
+        .video-container {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+        }
+
+        .video-background {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover; /* ensure video fills container without stretching */
+            object-position: center center;
+            z-index: -1;
+            pointer-events: none; /* avoid intercepting clicks */
+            background-color: #000; /* avoids flash on load */
+        }
+        
+        .hero-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.6);
+            z-index: 1;
+        }
+        
+        .hero-content {
+            position: relative;
+            z-index: 2;
+        }
+        
+        .service-card {
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        
+        .service-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+        }
+        
+        .nav-link {
+            position: relative;
+            transition: color 0.3s ease;
+        }
+        
+        .nav-link:after {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 2px;
+            bottom: -4px;
+            left: 0;
+            background-color: currentColor;
+            transition: width 0.3s ease;
+        }
+        
+        .nav-link:hover:after {
+            width: 100%;
+        }
+        
+        .stat-card {
+            background: linear-gradient(135deg, hsl(221, 75%, 45%) 0%, hsl(262.1 83.3% 57.8%) 100%);
+        }
+        
+        .fade-in {
+            opacity: 0;
+            transform: translateY(30px);
+            animation: fadeInUp 0.6s ease forwards;
+        }
+        
+        @keyframes fadeInUp {
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        
+        .mobile-menu {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease;
+        }
+        
+        .mobile-menu.open {
+            max-height: 300px;
+        }
+        
+        /* Mobile-specific video optimizations */
+        @media (max-width: 768px) {
+            .video-background {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+            
+            .hero-container {
+                position: relative;
+                background: none;
+            }
+            
+            .hero-content h1 {
+                font-size: 2.25rem;
+                line-height: 1.2;
+            }
+            
+            .hero-content p {
+                font-size: 1.125rem;
+            }
+            
+            .hero-buttons {
+                flex-direction: column;
+                align-items: center;
+            }
+            
+            .hero-buttons a {
+                width: 100%;
+                max-width: 280px;
+                text-align: center;
+            }
+            
+            .section-padding {
+                padding-top: 3rem;
+                padding-bottom: 3rem;
+            }
+            
+            .section-title {
+                font-size: 2rem;
+            }
+            
+            .grid-cols-responsive {
+                grid-template-columns: 1fr;
+            }
+            
+            .content-padding {
+                padding-left: 1rem;
+                padding-right: 1rem;
+            }
+            
+            .text-responsive {
+                font-size: 1rem;
+                line-height: 1.6;
+            }
+            
+            .card-padding {
+                padding: 1.5rem;
+            }
+            
+            .button-responsive {
+                padding: 0.75rem 1.5rem;
+                font-size: 1rem;
+            }
+            
+            .touch-target {
+                min-height: 44px;
+                min-width: 44px;
+            }
+            
+            /* NOTE: previous versions hid the video on very small screens to save bandwidth.
+               That behavior is now handled by the playback script which respects
+               prefers-reduced-motion and Save-Data. We keep the markup here so the
+               script can show the `.mobile-fallback-bg` only when needed. */
+        }
+
+        /* Fix for very wide screens (ultra-wide monitors) */
+        @media (min-width: 2000px) {
+            .video-background {
+                width: 100%;
+                height: auto;
+                min-height: 100vh;
+            }
+        }
+
+        /* Fix for very tall screens */
+        @media (min-height: 1000px) {
+            .video-background {
+                height: 100%;
+                width: auto;
+                min-width: 100vw;
+            }
+        }
+
+        @media (max-width: 640px) {
+            .hero-content h1 {
+                font-size: 1.875rem;
+            }
+            
+            .hero-content p {
+                font-size: 1rem;
+            }
+            
+            .section-title {
+                font-size: 1.75rem;
+            }
+            
+            .stat-card {
+                padding: 1.5rem;
+            }
+            
+            .stat-card .text-4xl {
+                font-size: 1.875rem;
+            }
+        }
+
+        @media (max-width: 475px) {
+            .hero-content h1 {
+                font-size: 1.5rem;
+            }
+            
+            .section-title {
+                font-size: 1.5rem;
+            }
+            
+            .content-padding {
+                padding-left: 0.75rem;
+                padding-right: 0.75rem;
+            }
+        }
+
+        /* Hide mobile fallback by default */
+        .mobile-fallback-bg {
+            display: none;
+        }
+
+        .logistic-animation-container {
+            position: relative;
+            width: 100%;
+            max-width: 400px;
+            height: 300px;
+            margin: 0 auto;
+        }
+        
+        @media (min-width: 768px) {
+            .logistic-animation-container {
+                height: 400px;
+            }
+        }
+        
+        .globe {
+            font-size: 120px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            animation: rotateGlobe 20s linear infinite;
+            text-shadow: 0 0 20px rgba(0, 255, 255, 0.5);
+        }
+        
+        @media (min-width: 768px) {
+            .globe {
+                font-size: 150px;
+            }
+        }
+        
+        .globe::before {
+            content: "🌍";
+        }
+        
+        .airplane, .train, .truck, .ship {
+            position: absolute;
+            font-size: 20px;
+            width: 24px;
+            height: 24px;
+            text-align: center;
+        }
+        
+        @media (min-width: 768px) {
+            .airplane, .train, .truck, .ship {
+                font-size: 24px;
+            }
+        }
+        
+        .airplane::before { content: "✈️"; }
+        .train::before { content: "🚂"; }
+        .truck::before { content: "🚚"; }
+        .ship::before { content: "🚢"; }
+        
+        @keyframes rotateGlobe {
+            100% { transform: translate(-50%, -50%) rotate(360deg); }
+        }
+
+        /* EXTRA PROTECTION AGAINST HORIZONTAL SCROLL */
+        section, div, nav, footer, header {
+            max-width: 100vw;
+            overflow-x: hidden;
+        }
+
+        img, video {
+            max-width: 100%;
+            height: auto;
+        }
+
+        /* Force all text containers to wrap */
+        .text-container {
+            word-wrap: break-word;
+            overflow-wrap: break-word;
+        }
+    </style>
+</head>
+<body class="bg-background text-foreground container-fix">
+    <!-- Navigation -->
+    <nav class="fixed top-0 w-full bg-white shadow-lg z-50 container-fix">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 container-fix">
+        <div class="flex justify-between items-center h-16 container-fix">
+          <div class="flex items-center">
+            <h1 class="text-blue-600 text-xl font-bold flex items-center gap-2">
+              <div class="w-10 h-10 bg-blue-600 rounded-lg flex items-center justify-center text-white">
+                <i class="fas fa-ship"></i>
+              </div>
+              <span class="hidden xs:inline">Shree Shuba Associates</span>
+              <span class="xs:hidden">SSA</span>
+            </h1>
+          </div>
+
+          <div class="hidden md:flex space-x-8">
+            <a href="#home" class="nav-link text-blue-600 hover:text-blue-800">Home</a>
+            <a href="#about" class="nav-link text-blue-600 hover:text-blue-800">About</a>
+            <a href="#services" class="nav-link text-blue-600 hover:text-blue-800">Services</a>
+            <a href="#team" class="nav-link text-blue-600 hover:text-blue-800">Team</a>
+            <a href="#contact" class="nav-link text-blue-600 hover:text-blue-800">Contact</a>
+          </div>
+
+          <button id="mobile-menu-btn" class="md:hidden text-blue-600 touch-target">
+            <i class="fas fa-bars text-xl"></i>
+          </button>
+        </div>
+
+        <div id="mobile-menu" class="mobile-menu md:hidden bg-white container-fix">
+          <div class="px-2 pt-2 pb-3 space-y-1 container-fix">
+            <a href="#home" class="block px-3 py-2 text-blue-600 hover:text-blue-800 touch-target">Home</a>
+            <a href="#about" class="block px-3 py-2 text-blue-600 hover:text-blue-800 touch-target">About</a>
+            <a href="#services" class="block px-3 py-2 text-blue-600 hover:text-blue-800 touch-target">Services</a>
+            <a href="#team" class="block px-3 py-2 text-blue-600 hover:text-blue-800 touch-target">Team</a>
+            <a href="#contact" class="block px-3 py-2 text-blue-600 hover:text-blue-800 touch-target">Contact</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero Section with Video Background - IMPROVED -->
+    <section id="home" class="hero-container min-h-screen flex items-center justify-center pt-16 relative overflow-hidden container-fix">
+        <!-- Video Background with better responsive handling -->
+        <div class="video-container absolute inset-0 w-full h-full container-fix">
+            <!-- Video element with fallback image -->
+            <video class="video-background" autoplay loop muted playsinline poster="https://images.unsplash.com/photo-1519791883288-dc8bd696e667?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80">
+                <!-- Main video source -->
+                <source src="videoplayback.mp4" type="video/mp4">
+                
+                <!-- Secondary video source for better compatibility -->
+                <source src="videoplayback.mp4" type="video/mp4">
+                
+                <!-- Fallback image for browsers that don't support video -->
+                <img src="https://images.unsplash.com/photo-1519791883288-dc8bd696e667?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80" 
+                     alt="Logistics Background" 
+                     class="video-background">
+            </video>
+            
+            <!-- Mobile-optimized fallback -->
+            <div class="mobile-fallback-bg absolute inset-0 bg-cover bg-center bg-no-repeat md:hidden"
+                 style="background-image: url('https://images.unsplash.com/photo-1519791883288-dc8bd696e667?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80')">
+            </div>
+        </div>
+        
+        <!-- Overlay for better text visibility -->
+        <div class="hero-overlay"></div>
+        
+        <!-- Hero content -->
+        <div class="hero-content max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center content-padding relative z-10 container-fix text-container">
+            <h1 class="text-3xl xs:text-4xl md:text-6xl font-bold text-white mb-6 fade-in">
+                Global Logistics Solutions
+            </h1>
+            <p class="text-lg xs:text-xl md:text-2xl text-white/90 mb-8 max-w-3xl mx-auto fade-in text-responsive" style="animation-delay: 0.2s;">
+                Your trusted partner in international freight forwarding and logistics services since 2010
+            </p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center fade-in hero-buttons" style="animation-delay: 0.4s;">
+                <a href="#contact" class="inline-flex items-center justify-center px-6 xs:px-8 py-3 bg-white text-primary font-semibold rounded-full hover:bg-white/90 transition-colors button-responsive touch-target">
+                    Get Started
+                    <i class="fas fa-arrow-right ml-2"></i>
+                </a>
+                <a href="#services" class="inline-flex items-center justify-center px-6 xs:px-8 py-3 bg-transparent border-2 border-white text-white font-semibold rounded-full hover:bg-white/10 transition-colors button-responsive touch-target">
+                    Our Services
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-12 md:py-20 bg-background section-padding container-fix">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 content-padding container-fix">
+        <div class="text-center mb-12 md:mb-16 container-fix">
+            <h2 class="text-2xl md:text-4xl font-bold text-foreground mb-4 section-title">About Shree Shuba Associates</h2>
+            <div class="w-24 h-1 bg-primary mx-auto rounded-full"></div>
+        </div>
+        
+        <div class="grid md:grid-cols-2 gap-8 md:gap-12 items-center container-fix">
+            <div class="text-container">
+                <h3 class="text-xl md:text-2xl font-semibold text-foreground mb-4 md:mb-6">Company Profile</h3>
+                <p class="text-muted-foreground mb-4 md:mb-6 leading-relaxed text-responsive">
+                    <strong>Shree Shuba Associates</strong> was established in 2010 under the proprietorship of Mr. A.C.S. Mutho, who brings over 26 years of rich professional experience in the shipping trade and international global logistics. With a vision to deliver global expertise locally, our founder has been instrumental in the growth of several multinational logistics companies in India, including SWG Group (Air Link India Ltd), SDV Logistics, Cargo Partner Logistics Pvt Ltd, and Unique Logistics India Pvt Ltd.
+                </p>
+                <p class="text-muted-foreground mb-4 md:mb-6 leading-relaxed text-responsive">
+                    Headquartered in Chennai, we have expanded our network to five locations: Tuticorin, Sricity, Krishnapatnam Port, Mumbai, and Chennai, with plans to open in Pune. Our young and dynamic team is dedicated to handling challenging jobs and providing exceptional service to our clients and partners.
+                </p>
+                <h3 class="text-xl md:text-2xl font-semibold text-foreground mb-4 md:mb-6">Business Plan & Services</h3>
+                <p class="text-muted-foreground mb-4 md:mb-6 leading-relaxed text-responsive">
+                    We act as a liaison between corporate companies and customs departments for both air and sea operations, serving manufacturing, trading, and various industry verticals. Our unique value lies in our advisory and mentorship for exporters and importers, helping clients maximize government export benefit schemes and navigate complex global trade processes.
+                </p>
+                <ul class="list-disc pl-5 md:pl-6 text-muted-foreground mb-4 md:mb-6 text-responsive">
+                    <li class="mb-2">Ocean & Air Exports/Imports</li>
+                    <li class="mb-2">Customs Clearance & Consultancy</li>
+                    <li class="mb-2">Mentorship for Startup Exporters/Importers</li>
+                    <li class="mb-2">Government Export Benefits Schemes Processing</li>
+                    <li class="mb-2">Shipping Advisory & Consulting under one umbrella</li>
+                </ul>
+                
+                <!-- Additional content with responsive spacing -->
+                <div class="space-y-4 md:space-y-6">
+                    <div>
+                        <h3 class="text-xl md:text-2xl font-semibold text-foreground mb-2 md:mb-4">Vision & Mission</h3>
+                        <p class="text-muted-foreground leading-relaxed text-responsive">
+                            To establish a global Indian MNC with our own network of global operations, delivering world-class logistics solutions and building long-lasting relationships with our clients.
+                        </p>
+                    </div>
+                    
+                    <div>
+                        <h3 class="text-xl md:text-2xl font-semibold text-foreground mb-2 md:mb-4">Industry Expertise</h3>
+                        <p class="text-muted-foreground leading-relaxed text-responsive">
+                            We serve a wide range of industries including Automotive, Electronics, Garments, Leather, Trading, Industrial Projects, Agriculture, Food Products, Perishables (fruits, vegetables, flowers, marine products), and more.
+                        </p>
+                    </div>
+                    
+                    <div>
+                        <h3 class="text-xl md:text-2xl font-semibold text-foreground mb-2 md:mb-4">Key Differentiators</h3>
+                        <ul class="list-disc pl-5 md:pl-6 text-muted-foreground text-responsive">
+                            <li class="mb-2">50% annual growth rate and INR 6 Crores turnover (past 3 years)</li>
+                            <li class="mb-2">Mentorship and advisory for exporters/importers</li>
+                            <li class="mb-2">Implementation of new shipping technologies and customer service platforms</li>
+                            <li class="mb-2">Long-lasting client relationships and global network partnerships</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="relative mt-8 md:mt-0 container-fix">
+                <div class="logistic-animation-container">
+                    <div class="globe"></div>
+                    <div class="airplane airplane-1"></div>
+                    <div class="train train-1"></div>
+                    <div class="truck truck-1"></div>
+                    <div class="ship ship-1"></div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Stats -->
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8 mt-12 md:mt-20 container-fix">
+            <div class="stat-card text-white p-6 md:p-8 rounded-2xl text-center">
+                <div class="text-3xl md:text-4xl font-bold mb-2">50%</div>
+                <div class="text-white/80 text-sm md:text-base">Annual Growth Rate</div>
+            </div>
+            <div class="stat-card text-white p-6 md:p-8 rounded-2xl text-center">
+                <div class="text-3xl md:text-4xl font-bold mb-2">₹6 Cr</div>
+                <div class="text-white/80 text-sm md:text-base">Annual Turnover</div>
+            </div>
+            <div class="stat-card text-white p-6 md:p-8 rounded-2xl text-center">
+                <div class="text-3xl md:text-4xl font-bold mb-2">500+</div>
+                <div class="text-white/80 text-sm md:text-base">Happy Clients</div>
+            </div>
+        </div>
+    </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-12 md:py-20 bg-secondary/30 section-padding container-fix">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 content-padding container-fix">
+            <div class="text-center mb-12 md:mb-16 container-fix">
+                <h2 class="text-2xl md:text-4xl font-bold text-foreground mb-4 section-title">Our Services</h2>
+                <div class="w-24 h-1 bg-primary mx-auto rounded-full"></div>
+                <p class="text-muted-foreground mt-4 md:mt-6 max-w-2xl mx-auto text-responsive">
+                    Comprehensive logistics solutions tailored to meet your specific business needs
+                </p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8 grid-cols-responsive container-fix">
+                <div class="service-card bg-card p-6 md:p-8 rounded-2xl shadow-lg border border-border card-padding container-fix">
+                    <div class="w-14 h-14 md:w-16 md:h-16 bg-primary/10 rounded-2xl flex items-center justify-center mb-4 md:mb-6">
+                        <i class="fas fa-ship text-primary text-xl md:text-2xl"></i>
+                    </div>
+                    <h3 class="text-lg md:text-xl font-semibold text-foreground mb-3 md:mb-4">Ocean Freight</h3>
+                    <p class="text-muted-foreground text-responsive">Full-container load (FCL) and less-than-container load (LCL) services for both imports and exports with global coverage.</p>
+                </div>
+                
+                <div class="service-card bg-card p-6 md:p-8 rounded-2xl shadow-lg border border-border card-padding container-fix">
+                    <div class="w-14 h-14 md:w-16 md:h-16 bg-primary/10 rounded-2xl flex items-center justify-center mb-4 md:mb-6">
+                        <i class="fas fa-plane text-primary text-xl md:text-2xl"></i>
+                    </div>
+                    <h3 class="text-lg md:text-xl font-semibold text-foreground mb-3 md:mb-4">Air Freight</h3>
+                    <p class="text-muted-foreground text-responsive">Time-sensitive air freight solutions for urgent shipments with priority handling and express delivery options.</p>
+                </div>
+                
+                <div class="service-card bg-card p-6 md:p-8 rounded-2xl shadow-lg border border-border card-padding container-fix">
+                    <div class="w-14 h-14 md:w-16 md:h-16 bg-primary/10 rounded-2xl flex items-center justify-center mb-4 md:mb-6">
+                        <i class="fas fa-file-contract text-primary text-xl md:text-2xl"></i>
+                    </div>
+                    <h3 class="text-lg md:text-xl font-semibold text-foreground mb-3 md:mb-4">Customs Clearance</h3>
+                    <p class="text-muted-foreground text-responsive">Expert customs brokerage services ensuring smooth and compliant clearance of your goods through all major ports.</p>
+                </div>
+                
+                <div class="service-card bg-card p-6 md:p-8 rounded-2xl shadow-lg border border-border card-padding container-fix">
+                    <div class="w-14 h-14 md:w-16 md:h-16 bg-primary/10 rounded-2xl flex items-center justify-center mb-4 md:mb-6">
+                        <i class="fas fa-handshake text-primary text-xl md:text-2xl"></i>
+                    </div>
+                    <h3 class="text-lg md:text-xl font-semibold text-foreground mb-3 md:mb-4">Trade Consultancy</h3>
+                    <p class="text-muted-foreground text-responsive">Professional guidance on export benefit schemes, DGFT policies, and international trade regulations.</p>
+                </div>
+                
+                <div class="service-card bg-card p-6 md:p-8 rounded-2xl shadow-lg border border-border card-padding container-fix">
+                    <div class="w-14 h-14 md:w-16 md:h-16 bg-primary/10 rounded-2xl flex items-center justify-center mb-4 md:mb-6">
+                        <i class="fas fa-boxes text-primary text-xl md:text-2xl"></i>
+                    </div>
+                    <h3 class="text-lg md:text-xl font-semibold text-foreground mb-3 md:mb-4">Supply Chain Solutions</h3>
+                    <p class="text-muted-foreground text-responsive">End-to-end logistics management and warehousing solutions for various industry verticals.</p>
+                </div>
+                
+                <div class="service-card bg-card p-6 md:p-8 rounded-2xl shadow-lg border border-border card-padding container-fix">
+                    <div class="w-14 h-14 md:w-16 md:h-16 bg-primary/10 rounded-2xl flex items-center justify-center mb-4 md:mb-6">
+                        <i class="fas fa-chart-line text-primary text-xl md:text-2xl"></i>
+                    </div>
+                    <h3 class="text-lg md:text-xl font-semibold text-foreground mb-3 md:mb-4">Business Advisory</h3>
+                    <p class="text-muted-foreground text-responsive">Strategic mentorship for startups and established businesses in global export/import operations.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Industries Section -->
+    <section class="py-12 md:py-20 bg-background section-padding container-fix">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 content-padding container-fix">
+            <div class="text-center mb-12 md:mb-16 container-fix">
+                <h2 class="text-2xl md:text-4xl font-bold text-foreground mb-4 section-title">Industries We Serve</h2>
+                <div class="w-24 h-1 bg-primary mx-auto rounded-full"></div>
+            </div>
+            
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-6 container-fix">
+                <div class="bg-card p-4 md:p-6 rounded-xl shadow-lg border border-border text-center hover:shadow-xl transition-shadow container-fix">
+                    <i class="fas fa-car text-2xl md:text-3xl text-primary mb-3 md:mb-4"></i>
+                    <h3 class="font-semibold text-foreground text-sm md:text-base">Automotive</h3>
+                </div>
+                <div class="bg-card p-4 md:p-6 rounded-xl shadow-lg border border-border text-center hover:shadow-xl transition-shadow container-fix">
+                    <i class="fas fa-microchip text-2xl md:text-3xl text-primary mb-3 md:mb-4"></i>
+                    <h3 class="font-semibold text-foreground text-sm md:text-base">Electronics</h3>
+                </div>
+                <div class="bg-card p-4 md:p-6 rounded-xl shadow-lg border border-border text-center hover:shadow-xl transition-shadow container-fix">
+                    <i class="fas fa-tshirt text-2xl md:text-3xl text-primary mb-3 md:mb-4"></i>
+                    <h3 class="font-semibold text-foreground text-sm md:text-base">Garments</h3>
+                </div>
+                <div class="bg-card p-4 md:p-6 rounded-xl shadow-lg border border-border text-center hover:shadow-xl transition-shadow container-fix">
+                    <i class="fas fa-ring text-2xl md:text-3xl text-primary mb-3 md:mb-4"></i>
+                    <h3 class="font-semibold text-foreground text-sm md:text-base">Leather</h3>
+                </div>
+                <div class="bg-card p-4 md:p-6 rounded-xl shadow-lg border border-border text-center hover:shadow-xl transition-shadow container-fix">
+                    <i class="fas fa-industry text-2xl md:text-3xl text-primary mb-3 md:mb-4"></i>
+                    <h3 class="font-semibold text-foreground text-sm md:text-base">Industrial</h3>
+                </div>
+                <div class="bg-card p-4 md:p-6 rounded-xl shadow-lg border border-border text-center hover:shadow-xl transition-shadow container-fix">
+                    <i class="fas fa-seedling text-2xl md:text-3xl text-primary mb-3 md:mb-4"></i>
+                    <h3 class="font-semibold text-foreground text-sm md:text-base">Agriculture</h3>
+                </div>
+                <div class="bg-card p-4 md:p-6 rounded-xl shadow-lg border border-border text-center hover:shadow-xl transition-shadow container-fix">
+                    <i class="fas fa-utensils text-2xl md:text-3xl text-primary mb-3 md:mb-4"></i>
+                    <h3 class="font-semibold text-foreground text-sm md:text-base">Food Products</h3>
+                </div>
+                <div class="bg-card p-4 md:p-6 rounded-xl shadow-lg border border-border text-center hover:shadow-xl transition-shadow container-fix">
+                    <i class="fas fa-fish text-2xl md:text-3xl text-primary mb-3 md:mb-4"></i>
+                    <h3 class="font-semibold text-foreground text-sm md:text-base">Marine</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Team Section -->
+    <section id="team" class="py-12 md:py-20 bg-secondary/30 section-padding container-fix">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 content-padding container-fix">
+            <div class="text-center mb-12 md:mb-16 container-fix">
+                <h2 class="text-2xl md:text-4xl font-bold text-foreground mb-4 section-title">Our Leadership Team</h2>
+                <div class="w-24 h-1 bg-primary mx-auto rounded-full"></div>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8 container-fix">
+                <div class="bg-card rounded-2xl shadow-xl border border-border overflow-hidden container-fix">
+                    <div class="h-40 md:h-48 bg-gradient-to-br from-primary to-primary/80 flex items-center justify-center">
+                        <i class="fas fa-user-tie text-5xl md:text-6xl text-white"></i>
+                    </div>
+                    <div class="p-5 md:p-6">
+                        <h3 class="text-lg md:text-xl font-semibold text-foreground mb-2">Mr. A.C.S. Mutho</h3>
+                        <p class="text-primary font-medium mb-3 text-sm md:text-base">Founder & Managing Director</p>
+                        <p class="text-muted-foreground text-xs md:text-sm mb-4">
+                            BA with 26+ years of shipping industry experience. Visionary leader connecting global logistics networks.
+                        </p>
+                        <p class="text-xs md:text-sm text-muted-foreground">
+                            <i class="fas fa-envelope mr-2"></i>
+                            info@shreeshubassociates.com
+                        </p>
+                    </div>
+                </div>
+                
+                <div class="bg-card rounded-2xl shadow-xl border border-border overflow-hidden container-fix">
+                    <div class="h-40 md:h-48 bg-gradient-to-br from-primary to-primary/80 flex items-center justify-center">
+                        <i class="fas fa-user-tie text-5xl md:text-6xl text-white"></i>
+                    </div>
+                    <div class="p-5 md:p-6">
+                        <h3 class="text-lg md:text-xl font-semibold text-foreground mb-2">Mr. Venkat</h3>
+                        <p class="text-primary font-medium mb-3 text-sm md:text-base">Head of Customer Service</p>
+                        <p class="text-muted-foreground text-xs md:text-sm mb-4">
+                            Leading customer satisfaction initiatives and ensuring exceptional service delivery.
+                        </p>
+                        <p class="text-xs md:text-sm text-muted-foreground">
+                            <i class="fas fa-envelope mr-2"></i>
+                            customerservice@shreeshubassociates.com
+                        </p>
+                    </div>
+                </div>
+                
+                <div class="bg-card rounded-2xl shadow-xl border border-border overflow-hidden container-fix">
+                    <div class="h-40 md:h-48 bg-gradient-to-br from-primary to-primary/80 flex items-center justify-center">
+                        <i class="fas fa-user-tie text-5xl md:text-6xl text-white"></i>
+                    </div>
+                    <div class="p-5 md:p-6">
+                        <h3 class="text-lg md:text-xl font-semibold text-foreground mb-2">Mr. Harish</h3>
+                        <p class="text-primary font-medium mb-3 text-sm md:text-base">Head of DGFT Consultancy</p>
+                        <p class="text-muted-foreground text-xs md:text-sm mb-4">
+                            Expert in DGFT policies with extensive experience in trade regulations and compliance.
+                        </p>
+                        <p class="text-xs md:text-sm text-muted-foreground">
+                            <i class="fas fa-envelope mr-2"></i>
+                            dgft@shreeshubassociates.com
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-12 md:py-20 bg-background section-padding container-fix">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 content-padding container-fix">
+            <div class="text-center mb-12 md:mb-16 container-fix">
+                <h2 class="text-2xl md:text-4xl font-bold text-foreground mb-4 section-title">Get In Touch</h2>
+                <div class="w-24 h-1 bg-primary mx-auto rounded-full"></div>
+                <p class="text-muted-foreground mt-4 md:mt-6 max-w-2xl mx-auto text-responsive">
+                    Ready to streamline your logistics? Contact our expert team for personalized solutions.
+                </p>
+            </div>
+            
+            <div class="grid md:grid-cols-2 gap-8 md:gap-12 container-fix">
+                <div>
+                    <form id="contact-form" class="space-y-4 md:space-y-6 container-fix">
+                        <div>
+                            <label for="name" class="block text-sm font-medium text-foreground mb-2">Your Name</label>
+                            <input type="text" id="name" required class="w-full px-4 py-3 bg-background border border-border rounded-lg focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent text-responsive">
+                        </div>
+                        
+                        <div>
+                            <label for="email" class="block text-sm font-medium text-foreground mb-2">Email Address</label>
+                            <input type="email" id="email" required class="w-full px-4 py-3 bg-background border border-border rounded-lg focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent text-responsive">
+                        </div>
+                        
+                        <div>
+                            <label for="subject" class="block text-sm font-medium text-foreground mb-2">Subject</label>
+                            <input type="text" id="subject" required class="w-full px-4 py-3 bg-background border border-border rounded-lg focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent text-responsive">
+                        </div>
+                        
+                        <div>
+                            <label for="message" class="block text-sm font-medium text-foreground mb-2">Message</label>
+                            <textarea id="message" rows="5" required class="w-full px-4 py-3 bg-background border border-border rounded-lg focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent resize-none text-responsive"></textarea>
+                        </div>
+                        
+                        <button type="submit" class="w-full bg-primary text-primary-foreground font-semibold py-3 px-6 rounded-lg hover:bg-primary/90 transition-colors button-responsive touch-target">
+                            Send Message
+                            <i class="fas fa-paper-plane ml-2"></i>
+                        </button>
+                    </form>
+                </div>
+                
+                <div class="bg-card p-6 md:p-8 rounded-2xl shadow-lg border border-border card-padding container-fix">
+                    <h3 class="text-lg md:text-xl font-semibold text-foreground mb-4 md:mb-6">Contact Information</h3>
+                    
+                    <div class="space-y-4 md:space-y-6">
+                        <div class="flex items-start">
+                            <div class="w-10 h-10 bg-primary/10 rounded-lg flex items-center justify-center flex-shrink-0 mr-4">
+                                <i class="fas fa-map-marker-alt text-primary"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold text-foreground mb-1 text-sm md:text-base">Address</h4>
+                                <p class="text-muted-foreground text-xs md:text-sm">
+                                    165/82, Thambuchettystreet,<br>
+                                    2nd & 3rd Floor, Near Muthialpet Boys school,<br>
+                                    Chennai-600001
+                                </p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-center">
+                            <div class="w-10 h-10 bg-primary/10 rounded-lg flex items-center justify-center flex-shrink-0 mr-4">
+                                <i class="fas fa-envelope text-primary"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold text-foreground mb-1 text-sm md:text-base">Email</h4>
+                                <p class="text-muted-foreground text-xs md:text-sm">info@shreeshubassociates.com</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-center">
+                            <div class="w-10 h-10 bg-primary/10 rounded-lg flex items-center justify-center flex-shrink-0 mr-4">
+                                <i class="fas fa-globe text-primary"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold text-foreground mb-1 text-sm md:text-base">Website</h4>
+                                <p class="text-muted-foreground text-xs md:text-sm">www.shreeshubassociates.com</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="mt-6 md:mt-8 pt-6 md:pt-8 border-t border-border">
+                        <h4 class="font-semibold text-foreground mb-3 md:mb-4 text-sm md:text-base">Department Contacts</h4>
+                        <div class="space-y-1 md:space-y-2 text-xs md:text-sm text-muted-foreground">
+                            <p><span class="font-medium">Logistics:</span> customerservice@shreeshubassociates.com</p>
+                            <p><span class="font-medium">Enquiries:</span> enquiry@shreeshubassociates.com</p>
+                            <p><span class="font-medium">DGFT:</span> dgft@shreeshubassociates.com</p>
+                            <p><span class="font-medium">Admin:</span> admin@shreeshubassociates.com</p>
+                            <p><span class="font-medium">HR:</span> hr@shreeshubassociates.com</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-foreground text-background py-8 md:py-12 container-fix">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 content-padding container-fix">
+            <div class="grid md:grid-cols-4 gap-6 md:gap-8 mb-6 md:mb-8 container-fix">
+                <div class="md:col-span-2">
+                    <h3 class="text-xl md:text-2xl font-bold mb-3 md:mb-4">Shree Shuba Associates</h3>
+                    <p class="text-background/80 mb-4 md:mb-6 max-w-md text-sm md:text-base">
+                        Your trusted partner in international freight forwarding and logistics solutions since 2010. 
+                        Global expertise delivered locally.
+                    </p>
+                    <div class="flex space-x-3 md:space-x-4">
+                        <a href="#" class="w-8 h-8 md:w-10 md:h-10 bg-background/10 rounded-lg flex items-center justify-center text-background hover:bg-background/20 transition-colors touch-target">
+                            <i class="fab fa-facebook-f text-xs md:text-sm"></i>
+                        </a>
+                        <a href="#" class="w-8 h-8 md:w-10 md:h-10 bg-background/10 rounded-lg flex items-center justify-center text-background hover:bg-background/20 transition-colors touch-target">
+                            <i class="fab fa-twitter text-xs md:text-sm"></i>
+                        </a>
+                        <a href="#" class="w-8 h-8 md:w-10 md:h-10 bg-background/10 rounded-lg flex items-center justify-center text-background hover:bg-background/20 transition-colors touch-target">
+                            <i class="fab fa-linkedin-in text-xs md:text-sm"></i>
+                        </a>
+                        <a href="#" class="w-8 h-8 md:w-10 md:h-10 bg-background/10 rounded-lg flex items-center justify-center text-background hover:bg-background/20 transition-colors touch-target">
+                            <i class="fab fa-instagram text-xs md:text-sm"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <div>
+                    <h4 class="text-base md:text-lg font-semibold mb-3 md:mb-4">Quick Links</h4>
+                    <ul class="space-y-1 md:space-y-2">
+                        <li><a href="#home" class="text-background/80 hover:text-background transition-colors text-sm md:text-base">Home</a></li>
+                        <li><a href="#about" class="text-background/80 hover:text-background transition-colors text-sm md:text-base">About Us</a></li>
+                        <li><a href="#services" class="text-background/80 hover:text-background transition-colors text-sm md:text-base">Services</a></li>
+                        <li><a href="#team" class="text-background/80 hover:text-background transition-colors text-sm md:text-base">Team</a></li>
+                        <li><a href="#contact" class="text-background/80 hover:text-background transition-colors text-sm md:text-base">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h4 class="text-base md:text-lg font-semibold mb-3 md:mb-4">Services</h4>
+                    <ul class="space-y-1 md:space-y-2">
+                        <li><a href="#" class="text-background/80 hover:text-background transition-colors text-sm md:text-base">Ocean Freight</a></li>
+                        <li><a href="#" class="text-background/80 hover:text-background transition-colors text-sm md:text-base">Air Freight</a></li>
+                        <li><a href="#" class="text-background/80 hover:text-background transition-colors text-sm md:text-base">Customs Clearance</a></li>
+                        <li><a href="#" class="text-background/80 hover:text-background transition-colors text-sm md:text-base">Trade Consultancy</a></li>
+                        <li><a href="#" class="text-background/80 hover:text-background transition-colors text-sm md:text-base">Supply Chain</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="border-t border-background/20 pt-6 md:pt-8 text-center">
+                <p class="text-background/60 text-xs md:text-sm">
+                    &copy; 2023 Shree Shuba Associates. All rights reserved. | 
+                    Designed with ❤️ for logistics excellence
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        document.getElementById('mobile-menu-btn').addEventListener('click', function() {
+            const menu = document.getElementById('mobile-menu');
+            menu.classList.toggle('open');
+        });
+        
+        // Close mobile menu when clicking on links
+        document.querySelectorAll('#mobile-menu a').forEach(link => {
+            link.addEventListener('click', () => {
+                document.getElementById('mobile-menu').classList.remove('open');
+            });
+        });
+        
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+        
+        // Contact form handling
+        document.getElementById('contact-form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            const name = document.getElementById('name').value;
+            const email = document.getElementById('email').value;
+            const subject = document.getElementById('subject').value;
+            const message = document.getElementById('message').value;
+            
+            if (name && email && subject && message) {
+                // Show success message
+                const button = e.target.querySelector('button[type="submit"]');
+                const originalText = button.innerHTML;
+                button.innerHTML = '<i class="fas fa-check mr-2"></i>Message Sent!';
+                button.style.backgroundColor = '#10b981';
+                
+                setTimeout(() => {
+                    button.innerHTML = originalText;
+                    button.style.backgroundColor = '';
+                    this.reset();
+                }, 3000);
+            }
+        });
+        
+        // Add fade-in animation on scroll
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -100px 0px'
+        };
+        
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('fade-in');
+                }
+            });
+        }, observerOptions);
+        
+        // Observe elements for animation
+        document.querySelectorAll('.service-card, .stat-card').forEach(el => {
+            observer.observe(el);
+        });
+
+        // Logistic animation
+        document.addEventListener('DOMContentLoaded', function() {
+            const container = document.querySelector('.logistic-animation-container');
+            const radius = container.offsetWidth * 0.3; // Responsive radius based on container size
+            const speed = 0.02;
+            
+            const elements = document.querySelectorAll('.logistic-animation-container .airplane, .logistic-animation-container .train, .logistic-animation-container .truck, .logistic-animation-container .ship');
+            
+            elements.forEach((el, index) => {
+                const phase = (index * Math.PI * 2) / elements.length;
+                let angle = phase;
+                
+                function animate() {
+                    const containerWidth = container.offsetWidth;
+                    const containerHeight = container.offsetHeight;
+                    const x = containerWidth / 2 + Math.cos(angle) * radius;
+                    const y = containerHeight / 2 + Math.sin(angle) * radius;
+                    
+                    el.style.left = `${x}px`;
+                    el.style.top = `${y}px`;
+                    angle += speed;
+                    requestAnimationFrame(animate);
+                }
+                
+                animate();
+            });
+        });
+
+        // Prevent horizontal scroll on window resize
+        window.addEventListener('resize', function() {
+            document.documentElement.scrollLeft = 0;
+            document.body.scrollLeft = 0;
+        });
+
+        // Force scroll to top on page load
+        window.addEventListener('load', function() {
+            window.scrollTo(0, 0);
+        });
+    </script>
+
+    <!-- Video playback guard & fallback: attempts to play the hero video, falls back to image when blocked or on low-data/reduced-motion -->
+    <script>
+        (function(){
+            // Wait for DOM
+            document.addEventListener('DOMContentLoaded', function(){
+                const video = document.querySelector('.video-container video.video-background');
+                const mobileFallback = document.querySelector('.mobile-fallback-bg');
+
+                // If no video element, nothing to do
+                if (!video) return;
+
+                // Respect user's reduced motion preference and data saver
+                const prefersReduced = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+                const saveData = navigator.connection && navigator.connection.saveData;
+                if (prefersReduced || saveData) {
+                    video.style.display = 'none';
+                    if (mobileFallback) mobileFallback.style.display = 'block';
+                    return;
+                }
+
+                // Try to play; most mobile browsers allow autoplay only when muted + playsinline
+                video.muted = true;
+                video.playsInline = true;
+
+                // Attempt playback and fallback on error / rejection
+                const tryPlay = () => {
+                    const playPromise = video.play();
+                    if (playPromise !== undefined) {
+                        playPromise.then(() => {
+                            // Playing successfully
+                            if (mobileFallback) mobileFallback.style.display = 'none';
+                        }).catch((err) => {
+                            // Playback blocked or failed — hide video and show fallback
+                            console.warn('Background video playback blocked/failed:', err);
+                            video.style.display = 'none';
+                            if (mobileFallback) mobileFallback.style.display = 'block';
+                        });
+                    }
+                };
+
+                // If metadata not loaded yet, wait for it before trying to play
+                if (video.readyState < 2) {
+                    video.addEventListener('loadedmetadata', tryPlay, { once: true });
+                } else {
+                    tryPlay();
+                }
+
+                // If an error event occurs, fallback
+                video.addEventListener('error', () => {
+                    video.style.display = 'none';
+                    if (mobileFallback) mobileFallback.style.display = 'block';
+                });
+            });
+        })();
+    </script>
+</body>
+</html>
